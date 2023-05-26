@@ -117,3 +117,51 @@
         height: auto;
       }
     }
+
+    #informacoes-adicionais {
+      font-size: smaller;
+    }
+
+    /* Modo Noturno*/
+    .modo-noturno {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .modo-noturno #principal {
+      background-color: #222;
+    }
+
+    .modo-noturno #logo h2,
+    .modo-noturno #nome h1 {
+      color: #fff;
+    }
+
+    .modo-noturno {
+      color: #fff;
+    }
+
+    .modo-noturno #informacoes-adicionais,
+    .modo-noturno #experiencias_txt, .modo-noturno #sobre_mim_txt {
+      border: 1px solid #fff;
+    }
+
+    .modo-noturno #informacoes-adicionais p {
+      color: #fff;
+    }
+
+    .modo-noturno #conteudo {
+      background-color: #0a5d7e;
+    }
+
+    .modo-noturno #sobre_mim_txt, .modo-noturno #titulo_sobre_mim, .modo-noturno #titulo_experiencias {
+      color: #fff;
+    }
+
+    .modo-noturno #lateral {
+      background-color: #2a2929;
+    }
+
+    .modo-noturno #experiencias_txt {
+      color: #fff;
+    }

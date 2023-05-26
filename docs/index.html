@@ -5,20 +5,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Currículo</title>
-  <link rel="stylesheet" type="text/css" href="estilo.css   ">
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Ação de clique no botão para mostrar/esconder informações adicionais
+      $('#mostrar-esconder-btn').click(function() {
+        $('#informacoes-adicionais').toggle();
+      });
+
+      // Evento de clique para alternar o modo noturno
+      $('#modo-noturno-btn').click(function() {
+        $('body').toggleClass('modo-noturno');
+      });
+    });
+  </script>
 </head>
 
 <body>
   <div id="principal">
     <div id="logo">
-      <h2>Logo</h2>
+      <h2></h2>
     </div>
     <div id="nome">
       <h1>Guilherme Ferreira Linhares</h1>
     </div>
     <div id="conteudo">
       <div class="interno">
-        <h2>Sobre mim</h2>
+        <h2 id="titulo_sobre_mim">Sobre mim</h2>
         <br>
         <div id="sobre_mim_txt">
           <ul>
@@ -28,12 +42,18 @@
             <li><strong>Personalidade:</strong> Sou uma pessoa proativa, organizada e comprometida.</li>
             <li><strong>Habilidades:</strong> Tenho habilidades em programação, comunicação e trabalho em equipe.</li>
           </ul>
+          <button id="mostrar-esconder-btn">Mostrar/Esconder informações adicionais</button>
+          <div id="informacoes-adicionais" style="display: none;">
+            <p>Informações adicionais sobre mim:</p>
+            <br>
+            <p>Idiomas conhecidos: Português (Fluente), Inglês (Avançado), Espanhol (Básico)</p>
+          </div>
         </div>
       </div>
     </div>
     <div id="lateral">
       <div class="interno">
-        <h2>Experiências</h2>
+        <h2 id="titulo_experiencias">Experiências</h2>
         <br>
         <div id="experiencias_txt">
           <ul>
@@ -42,12 +62,14 @@
             <li><strong>Experiências:</strong> Estágio como desenvolvedor web no Banco Pan (2023-2024)</li>
           </ul>
         </div>
+
       </div>
     </div>
     <div id="rodape">
-      <p></p>
+      <button id="modo-noturno-btn">Modo Noturno</button>
     </div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 
 </html>
